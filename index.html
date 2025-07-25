@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JALWA SURESHOT - Join Now</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffd700, #ffed4e, #ffc107);
+            min-height: 100vh;
+            color: black;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo-section {
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .main-headline {
+            background: linear-gradient(45deg, #cc9900, #b8860b);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #f8e71c;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        .brand-line {
+            margin-bottom: 10px;
+        }
+
+        .jalwa-text {
+            color: #f8e71c;
+            font-size: 26px;
+            font-style: italic;
+            font-weight: 800;
+            font-family: Merriweather;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .sureshot-text {
+            color: #50e3c2;
+            font-size: 26px;
+            font-style: italic;
+            font-weight: 800;
+            font-family: Merriweather;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            margin-left: 10px;
+        }
+
+        .join-text {
+            color: #88eb1d;
+            font-size: 26px;
+            font-style: italic;
+            font-weight: 800;
+            font-family: Merriweather;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .features-section {
+            background: linear-gradient(45deg, #e6b800, #d4a400);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            border: 1px solid #ffcc00;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .features-section p {
+            font-size: 20px;
+            line-height: 1.6;
+            /* margin-bottom: 8px; */
+            color: white;
+            font-weight: 600;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .timer-section {
+            margin: 30px 0;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        .timer-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            gap: 8px;
+ background: linear-gradient(45deg, #ffcc00, #e6b800);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #f8e71c;
+                       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+
+        }
+
+        .timer-item {
+            text-align: center;
+        }
+
+        .timer-number {
+            color: #d0021b;
+            font-size: 24px;
+            font-weight: 700;
+            display: block;
+            text-shadow: 0 2px 10px rgba(208, 2, 27, 0.5);
+        }
+
+        .timer-label {
+            color: #4a4a4a;
+            font-size: 14px;
+            /* margin-top: 5px; */
+            font-weight: 600;
+        }
+
+        .timer-separator {
+            color: #d0021b;
+            font-size: 24px;
+            /* margin-top: 5px; */
+            font-weight: 700;
+            align-self: flex-start;
+            line-height: 1;
+        }
+
+        .join-button {
+            background: linear-gradient(45deg, #88eb1d, #66cc00);
+            color: #000000;
+            font-size: 30px;
+            font-weight: 700;
+            font-family: Lora;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 8px 25px rgba(136, 235, 29, 0.4);
+            transition: all 0.3s ease;
+            margin-bottom: 25px;
+            animation: fadeInUp 1s ease-out 0.8s both;
+        }
+
+        .join-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(136, 235, 29, 0.6);
+            background: linear-gradient(45deg, #66cc00, #88eb1d);
+        }
+
+        .join-button i {
+            margin: 0 8px;
+        }
+
+        .free-joining {
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease-out 1s both;
+        }
+
+        .free-text {
+            color: #8b4513;
+            font-size: 22px;
+            font-weight: 700;
+            text-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+        }
+
+        .hurry-section {
+            background: linear-gradient(45deg, #ffcc00, #e6b800);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #f8e71c;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 1s ease-out 1.2s both;
+        }
+
+        .hurry-text {
+            color: #1a1a1a;
+            font-size: 20px;
+            font-weight: 700;
+            text-shadow: 0 1px 3px rgba(255, 255, 255, 0.3);
+        }
+
+        .emoji {
+            font-size: 24px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(136, 235, 29, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(136, 235, 29, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(136, 235, 29, 0);
+            }
+        }
+
+        .join-button {
+            animation: fadeInUp 1s ease-out 0.8s both, pulse 2s infinite;
+        }
+
+        .divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #f8e71c, transparent);
+            margin: 30px 0;
+            border-radius: 1px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+
+            .logo {
+                width: 121px;
+                height: 121px;
+            }
+
+            .jalwa-text,
+            .sureshot-text {
+                font-size: 25px;
+            }
+
+            .join-text {
+                font-size: 26px;
+            }
+
+            .timer-display {
+                font-size: 24px;
+            }
+
+            .timer-container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Logo Section -->
+        <div class="logo-section">
+            <img src="/assets/logo.jfif" alt="Jalwa Logo" class="logo">
+        </div>
+
+        <!-- Main Headline -->
+        <div class="main-headline">
+            <div class="brand-line">
+                <span class="jalwa-text">JALWA</span>
+                <span class="sureshot-text">SURESHOT🚀</span>
+            </div>
+            <div class="join-text">👉 JOIN NOW 👈</div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="features-section">
+            <p>💥 Back to Back Sure shot</p>
+            <p>100% Accurate Prediction🎯</p>
+            <p>Recover Your Losses💰</p>
+        </div>
+
+        <!-- Timer Section -->
+        <div class="timer-section">
+            <div class="timer-container">
+                <div class="timer-item">
+                    <span class="timer-number" id="days">00</span>
+                    <div class="timer-label">days</div>
+                </div>
+                <div class="timer-separator">:</div>
+                <div class="timer-item">
+                    <span class="timer-number" id="hours">00</span>
+                    <div class="timer-label">hours</div>
+                </div>
+                <div class="timer-separator">:</div>
+                <div class="timer-item">
+                    <span class="timer-number" id="minutes">00</span>
+                    <div class="timer-label">minutes</div>
+                </div>
+                <div class="timer-separator">:</div>
+                <div class="timer-item">
+                    <span class="timer-number" id="seconds">15</span>
+                    <div class="timer-label">seconds</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Join Button -->
+        <a href="https://t.me/+mydpWJUbH-s5NjI1" class="join-button" target="_blank">
+            <i class="fab fa-telegram"></i>
+            JOIN NOW
+            <i class="fab fa-telegram"></i>
+        </a>
+
+        <!-- Divider -->
+        <div class="divider"></div>
+
+        <!-- Free Joining Section -->
+        <div class="free-joining">
+            <div class="free-text">Free Joining Available Time</div>
+        </div>
+
+        <!-- Hurry Up Section -->
+        <div class="hurry-section">
+            <span class="emoji">🤩</span>
+            <span class="hurry-text">Hurry Up</span>
+            <span class="emoji">🤩</span>
+        </div>
+    </div>
+
+    <script>
+        // 15 second countdown timer
+        let timeLeft = 15; // 15 seconds
+
+        function updateTimer() {
+            const interval = setInterval(() => {
+                if (timeLeft <= 0) {
+                    document.getElementById('days').textContent = '00';
+                    document.getElementById('hours').textContent = '00';
+                    document.getElementById('minutes').textContent = '00';
+                    document.getElementById('seconds').textContent = '00';
+                    clearInterval(interval);
+                    return;
+                }
+
+                const days = Math.floor(timeLeft / (24 * 60 * 60));
+                const hours = Math.floor((timeLeft % (24 * 60 * 60)) / (60 * 60));
+                const minutes = Math.floor((timeLeft % (60 * 60)) / 60);
+                const seconds = timeLeft % 60;
+
+                document.getElementById('days').textContent = days.toString().padStart(2, '0');
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+
+                timeLeft--;
+            }, 1000);
+        }
+
+        updateTimer();
+    </script>
+</body>
+
+</html>
