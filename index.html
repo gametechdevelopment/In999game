@@ -10,6 +10,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700;1,900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1449494832911315');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1449494832911315&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
     <style>
         * {
             margin: 0;
@@ -51,7 +72,7 @@
 
         .main-headline {
             background: linear-gradient(45deg, #cc9900, #b8860b);
-            padding: 20px 5px;
+            padding: 10px 5px;
             border-radius: 15px;
             margin-bottom: 20px;
             border: 1px solid #f8e71c;
@@ -59,12 +80,10 @@
             animation: fadeInUp 1s ease-out 0.2s both;
         }
 
-        .brand-line {
-            margin-bottom: 10px;
-        }
+
 
         .jalwa-text {
-            color: #f8e71c;
+            color: #50e3c2;
             font-size: 26px;
             font-style: italic;
             font-weight: 800;
@@ -73,7 +92,7 @@
         }
 
         .sureshot-text {
-            color: #50e3c2;
+            color: rgb(237, 11, 149);
             font-size: 26px;
             font-style: italic;
             font-weight: 800;
@@ -93,7 +112,7 @@
 
         .features-section {
             background: linear-gradient(45deg, #e6b800, #d4a400);
-            padding: 25px;
+            padding: 15px 5px;
             border-radius: 15px;
             margin-bottom: 25px;
             border: 1px solid #ffcc00;
@@ -142,7 +161,7 @@
         .timer-label {
             color: #4a4a4a;
             font-size: 14px;
-            margin-top: 5px;
+            /* margin-top: 5px; */
             font-weight: 600;
         }
 
@@ -172,11 +191,11 @@
             animation: fadeInUp 1s ease-out 0.8s both;
         }
 
-       .join-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgba(0, 27, 81, 0.6);
-    background: #001B51;
-}
+        .join-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(0, 27, 81, 0.6);
+            background: #001B51;
+        }
 
         .join-button i {
             margin: 0 8px;
@@ -200,10 +219,10 @@
         }
 
         .register-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgba(0, 27, 81, 0.6);
-    background: #001B51;
-}
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(0, 27, 81, 0.6);
+            background: #001B51;
+        }
 
         .register-button i {
             margin: 0 8px;
@@ -310,7 +329,7 @@
         .divider {
             height: 2px;
             background: linear-gradient(90deg, transparent, #f8e71c, transparent);
-            margin-bottom: 10px ;
+            margin-bottom: 10px;
             border-radius: 1px;
         }
 
@@ -339,7 +358,7 @@
             }
 
             .timer-container {
-                padding: 15px;
+                padding: 8px;
             }
         }
     </style>
@@ -349,23 +368,22 @@
     <div class="container">
         <!-- Logo Section -->
         <div class="logo-section">
-            <img src="/assets/logo.jfif" alt="Jalwa Logo" class="logo">
+            <img src="/assets/logo.jpeg" alt="Jalwa Logo" class="logo">
         </div>
 
         <!-- Main Headline -->
         <div class="main-headline">
             <div class="brand-line">
-                <span class="jalwa-text">IN999WIN</span>
-                <span class="sureshot-text">PREDICTION🚀</span>
+                <span class="jalwa-text">🚀 IN999</span>
+                <span class="sureshot-text">WIN🔱</span>
             </div>
-            <div class="join-text">👉 JOIN NOW 👈</div>
         </div>
 
         <!-- Features Section -->
         <div class="features-section">
-            <p>🎯Back to Back Sure Shot</p>
-            <p>100% Accurate Prediction💥</p>
-            <p>Growth 2K–20K Per Day💰</p>
+            <p>🎯Back to Back</p>
+            <p>Runing Under 4 Level💥</p>
+            <p>Daily GiftCode Available 🎁</p>
         </div>
 
         <!-- Timer Section -->
@@ -396,7 +414,7 @@
         <!-- Join Button -->
         <a href=" https://t.me/+DYQ0-6mjoCk2MGY9" class="join-button" target="_blank">
             <i class="fab fa-telegram"></i>
-            JOIN NOW 
+            JOIN NOW
             <i class="fab fa-telegram"></i>
         </a>
 
